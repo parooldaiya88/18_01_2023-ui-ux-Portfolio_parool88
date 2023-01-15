@@ -1,58 +1,6 @@
-/* .heading h1::before,
-  .heading h1::after{
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-   
-	left: 0;
-  }
-  .heading h1::before{
-  background: white;
-  animation: name 6s steps(24) infinite forwards;
-  }
-  .heading h1::after{
-	width: 5px;
-	height: 5px;
-	  animation: name 8s steps(24) forwards;
-	
-	  }
-  @keyframes name{
-  to{
-	left: 100%;
-  }
-  } */
-  @keyframes "typewriter" {
-	from {
-		width: 0;
-	}
-	to {
-		width: 13ch;
-	}
-}
-@keyframes "blinkCursor" {
-	from {
-		border-right: 1px solid #555;
-	}
-	to {
-		border-right: transparent;
-	}
-}
-/* SECTION-2 */
-/* *************************SKILL SECTION-3******************** */
-/*************************************** PROJECTS SECTION-4 **********************************/
-/************************************** CONTACT SECTION-5 **********************************/
-/* *********************************MEDIA QUEARIES***************************** */
-/* *******************************MEDIA QUERIES DESKTOP******************* */
-/* .intro-para div:nth-of-type(3){
-	  position: absolute;
-	  top: 136rem;
-	  left: 50rem;
-	
-	  
-	 
-	} */
+
+
+
 html {
 	scroll-behavior: smooth;
 	&:root {
@@ -113,7 +61,7 @@ body {
 	}
 }
 .fa-bars {
-	margin-left: 200px;
+	margin-left: 100px;
 	color: white;
 	font-size: 2rem;
 	&:hover {
@@ -176,14 +124,14 @@ body {
 }
 .heading {
 	width: 100%;
-	margin-top: 80%;
+	margin-top: 75%;
 	z-index: -1;
 	h1 {
 		margin-block: 20px;
 		font-size: 4rem;
 		color: #555;
 		font-family: monospace;
-		margin-top: 30rem;
+		margin-top: 25rem;
 		margin-left: 8%;
 		width: 0;
 		white-space: nowrap;
@@ -191,6 +139,22 @@ body {
 		border-right: 2px solid #555;
 		animation: typewriter 4s steps(13) forwards infinite, blinkCursor 1s infinite;
 		z-index: -1;
+	}
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+		to {
+			width: 13ch;
+		}
+	}
+	@keyframes blinkCursor {
+		from {
+			border-right: 1px solid #555;
+		}
+		to {
+			border-right: transparent;
+		}
 	}
 }
 .myname {
@@ -897,26 +861,28 @@ input[type=search] {
 			margin-left: 20rem;
 			font-weight: 600;
 		}
+		.nav-list {
+			position: absolute;
+			left: 100rem;
+		}
 	}
-	.nav-list {
-		position: absolute;
-		left: 100rem;
-	}
+	
 	.heading {
 		h1 {
 			font-size: 4rem;
 			margin-top: -40rem;
 			z-index: -1;
 		}
+		#mypic {
+			position: absolute;
+			top: 35%;
+			left: 60%;
+			border-radius: 50%;
+			width: 500px;
+		}
+		
 	}
-	#mypic {
-		position: absolute;
-		top: 35%;
-		left: 60%;
-		border-radius: 50%;
-		width: 500px;
-	}
-	.resume {
+.resume {
 		left: 12%;
 	}
 	#aboutpic {
@@ -959,25 +925,30 @@ input[type=search] {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		.certification1 {
+			margin-top: 7rem;
+		}
 	}
-	.certification1 {
-		margin-top: 7rem;
-	}
+	
 	.skills {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		.skills-content {
+			width: 40%;
+		}
+		.education {
+			width: 40%;
+		}
 	}
-	.skills-content {
-		width: 40%;
-	}
-	.education {
-		width: 40%;
-	}
+
 	.section-4 {
 		width: 30%;
 		display: grid;
 		place-items: center;
+	}
+	input[type=submit]{
+		font-size: 2rem;
 	}
 }
