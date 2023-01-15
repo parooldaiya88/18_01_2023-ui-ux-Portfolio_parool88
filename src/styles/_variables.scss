@@ -15,3 +15,98 @@
 // );
 
 // $spacer: 1rem;
+//colors
+$primary-color: #9381ff;
+$secondary-color: white;
+$tertiary-color: #555;
+$quaternary-color:#8e4e23;
+
+// fonts
+$primary-font: "Poppins", sans-serif;
+$secondary-font: monospace;
+$tertiary-font: "Times New Roman", Times, serif;
+
+// sizes
+$tiny: 1.3rem;
+$small: 1.5rem;
+$smaller:2rem;
+$medium: 3rem;
+$large: 4rem;
+$huge: 6rem;
+
+$border-size: 2px;
+
+// breakpoints
+$tablet: 768px;
+$laptop: 1024px;
+$desktop:1366px;
+//mixins
+
+@mixin name {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin anim1{
+    &::after {
+        content: '';
+        width: 0;
+        height: 5px;
+        display: block;
+        background-color: #eee;
+        border-radius: 12px;
+        position: relative;
+        left: 50%;
+        transition: 0.4s ease;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+@mixin anim2{
+    &::after {
+        content: '';
+        width: 0;
+        height: 5px;
+        display: block;
+        background-color: #9381ff;
+        border-radius: 12px;
+        position: relative;
+        left: 50%;
+        transition: 0.4s ease;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+@mixin anim3 {
+    position: relative;
+	// z-index: 1;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		inset: 0 -5px;
+		z-index: -1;
+		box-shadow: inset -1px -1px 5px rgba(255, 255, 255, 0.562);
+		background-color: goldenrod;
+		border-radius: 1px;
+		transform-origin: left;
+		transform: scaleX(0);
+		transition: 0.4s ease;
+	}
+	&:hover {
+		&::after {
+			transform: scale(1);
+			transform-origin: left;
+		}
+	}
+}
