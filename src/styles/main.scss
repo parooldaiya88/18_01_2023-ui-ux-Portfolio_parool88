@@ -51,29 +51,13 @@ body {
 
     @include anim1;
 
-    // &::after {
-    // 	content: '';
-    // 	width: 0;
-    // 	height: 5px;
-    // 	display: block;
-    // 	// background-color: #eee;
-    // 	border-radius: 12px;
-    // 	position: relative;
-    // 	left: 50%;
-    // 	transition: 0.4s ease;
-    // }
-    // &:hover {
-    // 	&::after {
-    // 		width: 100%;
-    // 		left: 0;
-    // 	}
-    // }
+  
   }
 }
 .fa-bars {
   margin-left: 150px;
   color: white;
-  font-size: 2rem;
+  font-size: $smaller;
   &:hover {
     cursor: pointer;
     transition: 4s 0.5s;
@@ -102,7 +86,7 @@ body {
   }
 }
 .nav-link {
-  font-size: 1.5rem;
+  font-size: $small;
   padding: 1.5rem 3rem;
   color: $secondary-color;
   text-decoration: none;
@@ -119,10 +103,17 @@ body {
   height: 100vh;
   margin: 0 auto;
   padding: 8rem;
-  h2 {
-    width: 100%;
-    color: $primary-color;
-    font-size: 3rem;
+  // h2 {
+  //   width: 100%;
+  //   color: $primary-color;
+  //   font-size: 3rem;
+  //   margin-left: 8%;
+  // }
+  h2{
+    position: relative;
+    font-size: 3vw;
+    color: $secondary-color;
+    -webkit-text-stroke:0.1vw $primary-color;
     margin-left: 8%;
   }
   p {
@@ -139,7 +130,7 @@ body {
   z-index: -1;
   h1 {
     margin-block: 20px;
-    font-size: 4rem;
+    font-size: $huge;
     color: $tertiary-color;
     font-family: $secondary-font;
     margin-top: 25rem;
@@ -182,7 +173,7 @@ body {
   display: inline-block;
   margin: 1.5rem 0;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: $small;
   text-decoration: none;
   position: absolute;
   top: 80%;
@@ -197,6 +188,7 @@ body {
   &:hover {
     background-color: green;
     transform: scale(1.2);
+    color: white;
   }
 }
 #mypic {
@@ -213,7 +205,7 @@ body {
 }
 .fa-circle-up {
   color: $primary-color;
-  font-size: 3rem;
+  font-size: $medium;
   position: fixed;
   top: 95vh;
   right: 1rem;
@@ -226,7 +218,7 @@ body {
     text-align: center;
     margin: auto;
     color: $primary-color;
-    font-size: 4rem;
+    font-size: $medium;
     font-family: $secondary-font;
     @include anim2;
   }
@@ -245,7 +237,7 @@ body {
   p {
     color: $secondary-color;
     text-align: center;
-    font-size: 2rem;
+    font-size: $small;
     padding: 2rem;
   }
   margin-top: 5rem;
@@ -261,7 +253,7 @@ body {
 .para1 {
   color: rgb(133, 131, 131);
   text-align: center;
-  font-size: 2rem;
+  font-size: $small;
   text-decoration: underline;
   margin-top: 2rem;
 }
@@ -271,7 +263,7 @@ body {
 .iconpara {
   display: block;
   color: $primary-color;
-  font-size: 2rem;
+  font-size: $small;
   padding: 1.2rem;
 }
 .intro-para-container {
@@ -286,7 +278,7 @@ body {
   justify-content: space-evenly;
   p {
     &:nth-of-type(1) {
-      font-size: 2rem;
+      font-size: $smaller;
     }
     font-size: 1.6rem;
     color: $primary-color;
@@ -294,7 +286,7 @@ body {
   }
 }
 .aboutpara {
-  font-size: 1.5rem;
+  font-size: $small;
   color: $tertiary-color;
   margin-top: 2rem;
 }
@@ -313,7 +305,7 @@ body {
   text-align: center;
 }
 #certih2 {
-  font-size: 3rem;
+  font-size: $medium;
   margin-top: 3rem;
   color: $primary-color;
   text-align: center;
@@ -321,19 +313,19 @@ body {
   font-weight: 700;
 }
 #certione {
-  font-size: 2rem;
+  font-size: $smaller;
   color: $tertiary-color;
   background-color: $secondary-color;
 }
 #certitwo {
-  font-size: 2rem;
+  font-size: $smaller;
   color: $tertiary-color;
   background-color: $secondary-color;
   margin-top: 5rem;
 }
 .institute {
   color: $tertiary-color;
-  font-size: 1.5rem;
+  font-size: $small;
   font-weight: 400;
 }
 .bdllink {
@@ -350,6 +342,7 @@ body {
   &:hover {
     background-color: green;
     transform: scale(1.3);
+    color: white;
   }
 }
 .fa-arrow-up-right-from-square {
@@ -366,7 +359,7 @@ body {
     margin-top: 30rem;
     color: $primary-color;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: $medium;
     font-family: $secondary-font;
   }
   h1 {
@@ -375,7 +368,7 @@ body {
   p {
     color: $tertiary-color;
     text-align: center;
-    font-size: 2rem;
+    font-size: $smaller;
     text-decoration: underline;
     margin-top: 2rem;
   }
@@ -391,9 +384,9 @@ body {
   padding: 2rem;
 }
 .content {
-  > h2 {
+   h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: $medium;
     color: $quaternary-color;
     font-weight: 500;
     transform: translateY(-30px);
@@ -406,7 +399,7 @@ body {
   justify-content: space-between;
   margin-bottom: 1rem;
   span {
-    font-size: 1.5rem;
+    font-size: $small;
     color: $tertiary-color;
   }
 }
@@ -450,20 +443,21 @@ body {
   width: 100%;
   padding: 2rem;
   margin: auto;
-  > h2 {
+   h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: $medium;
     color: $quaternary-color;
     font-weight: 500;
     text-shadow: 0 -1px 4px rgba(255, 255, 255, 0.7);
     font-family: monospace;
+    margin-bottom: 1rem;
   }
 }
 .qualification {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 1.5rem;
+  font-size: $small;
   color: $tertiary-color;
 }
 .qualification-data {
@@ -472,6 +466,10 @@ body {
   grid-template-rows: repeat(4, 1fr);
   margin: 1rem;
   color: $tertiary-color;
+  h2{
+    font-size: 2.5rem;
+  }
+ 
 }
 .qualification-1 {
   grid-area: 1/1/2/2;
@@ -499,7 +497,7 @@ body {
 .qualification-4 {
   grid-area: 3/3/4/4;
   text-align: right;
-  font-size: 1.5rem;
+  font-size: $small;
 }
 .empty1 {
   grid-area: 1/3/2/4;
@@ -547,7 +545,7 @@ body {
     width: 200px;
     margin: auto;
     margin-top: 10rem;
-    font-size: 4rem;
+    font-size: $medium;
     text-align: center;
     color: $primary-color;
   }
@@ -560,7 +558,7 @@ body {
   width: 80%;
   z-index: -1;
   text-align: center;
-  font-size: 3rem;
+  font-size: $medium;
   width: 400px;
   margin-top: 3rem;
   background-color: #eee;
@@ -581,7 +579,7 @@ body {
   text-align: center;
   color: $primary-color;
   font-family: $secondary-color;
-  font-size: 4rem;
+  font-size: $medium;
   margin: auto;
   @include anim2;
 }
@@ -597,7 +595,7 @@ body {
     a {
       text-decoration: none;
       color: $quaternary-color;
-      font-size: 2rem;
+      font-size: $smaller;
       font-family: $tertiary-font;
     }
   }
@@ -632,7 +630,7 @@ fieldset {
 }
 label {
   width: 80%;
-  font-size: 2rem;
+  font-size: $smaller;
   display: block;
   padding: 0.5rem;
   color: $tertiary-color;
@@ -642,7 +640,7 @@ label {
   text-align: center;
 }
 input[type="text"] {
-  padding: 1rem;
+  padding: $spacer;
   width: 80%;
   margin-left: 5px;
   border: none;
@@ -651,7 +649,7 @@ input[type="text"] {
   outline-color: $primary-color;
 }
 input[type="email"] {
-  padding: 1rem;
+  padding: $spacer;
   width: 80%;
   margin-left: 5px;
   border: none;
@@ -660,7 +658,7 @@ input[type="email"] {
   outline-color: $primary-color;
 }
 input[type="password"] {
-  padding: 1rem;
+  padding: $spacer;
   width: 80%;
   margin-left: 5px;
   border: none;
@@ -670,7 +668,7 @@ input[type="password"] {
   outline-color: $primary-color;
 }
 textarea {
-  padding: 1rem;
+  padding: $spacer;
   width: 80%;
   margin-left: 5px;
   border: none;
@@ -681,7 +679,7 @@ textarea {
   }
 }
 .fa-eye-slash {
-  font-size: 1.5rem;
+  font-size: $small;
   color: $tertiary-color;
   &:hover {
     color: $primary-color;
@@ -691,9 +689,9 @@ textarea {
 input[type="submit"] {
   width: 25%;
   background-color: $primary-color;
-  color: white;
+  color: $secondary-color;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: $small;
   margin-top: 2rem;
   border-radius: 10px;
   border: none;
@@ -705,7 +703,7 @@ input[type="submit"] {
   }
   &::placeholder {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: $small;
   }
 }
 /***************************************FOOTER********************************************/
@@ -716,9 +714,9 @@ footer {
   text-align: center;
   p {
     color: white;
-    font-size: 1.5rem;
+    font-size: $small;
     &:nth-of-type(1) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -732,11 +730,11 @@ input[type="search"] {
 .fa-magnifying-glass {
   display: inline-block;
   background-color: $secondary-color;
-  color: #9381ff;
+  color: $primary-color;
 }
 .footericons {
   i {
-    font-size: 3rem;
+    font-size: $medium;
     color: $secondary-color;
     padding: 2rem 4rem;
   }
@@ -809,7 +807,7 @@ input[type="search"] {
 
   .heading {
     h1 {
-      font-size: 4rem;
+      font-size: $huge;
       margin-top: 1%;
     }
   }
@@ -855,12 +853,12 @@ input[type="search"] {
   .aboutpara {
     width: 40%;
     margin-left: 70rem;
-    font-size: 2rem;
+    font-size: $smaller;
     text-align: justify;
     line-height: 5vh;
   }
   #certih2 {
-    font-size: 3rem;
+    font-size: $medium;
     margin-top: 15rem;
   }
   .certification {
@@ -891,7 +889,7 @@ input[type="search"] {
     place-items: center;
   }
   input[type="submit"] {
-    font-size: 2rem;
+    font-size: $smaller;
   }
 }
 
@@ -909,12 +907,18 @@ input[type="search"] {
 
   .heading {
     h1 {
-      font-size: 4rem;
+      font-size: $huge;
       margin-top: -25%;
       z-index: -1;
     }
   }
   .resume {
     left: 12%;
+  }
+  #aboutpic {
+    width: 40rem;
+    position: absolute;
+    left: 16rem;
+    top: 120rem;
   }
 }
