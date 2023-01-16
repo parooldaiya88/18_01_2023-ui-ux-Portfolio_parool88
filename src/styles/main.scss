@@ -37,6 +37,15 @@ body {
   left: 0;
   right: 0;
   top: 0;
+  animation: nav-load 3s ease;
+  @keyframes nav-load{
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
   h1 {
     border-left: 3px solid $quaternary-color;
     letter-spacing: 3px;
@@ -54,6 +63,7 @@ body {
   
   }
 }
+
 .fa-bars {
   margin-left: 150px;
   color: white;
@@ -115,6 +125,7 @@ body {
     color: $secondary-color;
     -webkit-text-stroke:0.1vw $primary-color;
     margin-left: 8%;
+    animation: nav-load 5s ease;
   }
   p {
     color: $tertiary-color;
@@ -122,6 +133,7 @@ body {
     font-size: $small;
     margin-left: 8%;
     margin-top: 2%;
+  
   }
 }
 .heading {
@@ -140,7 +152,7 @@ body {
     overflow: hidden;
     border-right: 2px solid #555;
     animation: typewriter 4s steps(13) forwards infinite,
-      blinkCursor 1s infinite;
+      blinkCursor 1s infinite, nav-load 4s ease;
     z-index: -1;
   }
   @keyframes typewriter {
@@ -202,6 +214,7 @@ body {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.03);
   width: 250px;
+  animation: nav-load 3s ease;
 }
 .fa-circle-up {
   color: $primary-color;
