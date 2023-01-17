@@ -606,7 +606,12 @@ body {
     @include anim2;
   }
 }
-
+.carousel-inner{
+  z-index: 1;
+}
+.projectslink{
+  text-decoration: none;
+}
 .carousel-item {
   width: 80%;
   z-index: -1;
@@ -614,9 +619,11 @@ body {
   font-size: $medium;
   width: 400px;
   margin-top: 3rem;
-  background-color: #eee;
+   background-color: #eee;
   box-shadow: 20px 10px 20px 10px gray;
+  z-index: -1;
   p {
+    font-size: $smaller;
     color: $quaternary-color;
   }
 }
