@@ -38,11 +38,11 @@ body {
   right: 0;
   top: 0;
   animation: nav-load 3s ease;
-  @keyframes nav-load{
-    0%{
+  @keyframes nav-load {
+    0% {
       transform: translateY(-100%);
     }
-    100%{
+    100% {
       transform: translateY(0);
     }
   }
@@ -59,8 +59,6 @@ body {
     }
 
     @include anim1;
-
-  
   }
 }
 
@@ -106,22 +104,7 @@ body {
   &:hover {
     color: $quaternary-color;
   }
-  &::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    display: block;
-    background-color:#8e4e23;
-    border-radius: 12px;
-    position: relative;
-    
-    transition: 0.4s ease;
-  
-  }
-  &:hover::after{
-    width: 100%;
-    
-  }
+
 }
 /***************************************ABOUT SECTION-1******************************************/
 .section-1 {
@@ -129,17 +112,12 @@ body {
   height: 100vh;
   margin: 0 auto;
   padding: 8rem;
-  // h2 {
-  //   width: 100%;
-  //   color: $primary-color;
-  //   font-size: 3rem;
-  //   margin-left: 8%;
-  // }
-  h2{
+
+  h2 {
     position: relative;
     font-size: 3vw;
     color: $secondary-color;
-    -webkit-text-stroke:0.1vw $primary-color;
+    -webkit-text-stroke: 0.1vw $primary-color;
     margin-left: 8%;
     animation: nav-load 5s ease;
   }
@@ -149,7 +127,6 @@ body {
     font-size: $small;
     margin-left: 8%;
     margin-top: 2%;
-  
   }
 }
 .heading {
@@ -342,7 +319,7 @@ body {
   font-weight: 700;
   width: 300px;
   margin: auto;
- 
+
   border-bottom: 3px dotted $primary-color;
 }
 #certione {
@@ -373,26 +350,25 @@ body {
   text-decoration: none;
   font-family: $tertiary-font;
   transition: 1s;
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
-  
+
     border: 5px solid $primary-color;
   }
   &:hover::before,
-  &:focus::before{
-    top: -10px ;
+  &:focus::before {
+    top: -10px;
     left: -10px;
     right: -10px;
     bottom: -10px;
   }
   &:hover {
-   
     transform: scale(1.2);
     color: white;
   }
@@ -436,7 +412,7 @@ body {
   padding: 2rem;
 }
 .content {
-   h2 {
+  h2 {
     text-align: center;
     font-size: $medium;
     color: $quaternary-color;
@@ -495,7 +471,7 @@ body {
   width: 100%;
   padding: 2rem;
   margin: auto;
-   h2 {
+  h2 {
     text-align: center;
     font-size: $medium;
     color: $quaternary-color;
@@ -518,11 +494,10 @@ body {
   grid-template-rows: repeat(4, 1fr);
   margin: 1rem;
   color: $tertiary-color;
-  h2{
+  h2 {
     font-size: 2.5rem;
     text-align: center;
   }
- 
 }
 .qualification-1 {
   grid-area: 1/1/2/2;
@@ -594,6 +569,7 @@ body {
 .section-4 {
   width: 80%;
   margin: auto;
+  margin-top: 30rem;
   h1 {
     width: 200px;
     margin: auto;
@@ -606,10 +582,10 @@ body {
     @include anim2;
   }
 }
-.carousel-inner{
+.carousel-inner {
   z-index: 1;
 }
-.projectslink{
+.projectslink {
   text-decoration: none;
 }
 .carousel-item {
@@ -619,7 +595,7 @@ body {
   font-size: $medium;
   width: 400px;
   margin-top: 3rem;
-   background-color: #eee;
+  background-color: #eee;
   box-shadow: 20px 10px 20px 10px gray;
   z-index: -1;
   p {
@@ -810,7 +786,26 @@ input[type="search"] {
     position: absolute;
     top: 3rem;
     left: 20rem;
+    .nav-link {
+      &::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        display: block;
+        background-color: #8e4e23;
+        border-radius: 12px;
+        position: relative;
+
+        transition: 0.4s ease;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    // @include anim4;
+
   }
+
   .heading {
     position: absolute;
     top: -65rem;
@@ -862,6 +857,22 @@ input[type="search"] {
     .nav-list {
       position: absolute;
       left: 60rem;
+      .nav-link {
+        &::after {
+          content: "";
+          width: 0;
+          height: 3px;
+          display: block;
+          background-color: #8e4e23;
+          border-radius: 12px;
+          position: relative;
+
+          transition: 0.4s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
     }
   }
 

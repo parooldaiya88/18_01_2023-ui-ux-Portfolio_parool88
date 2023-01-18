@@ -110,3 +110,19 @@ $desktop:1366px;
 		}
 	}
 }
+    @mixin anim4 {
+        &::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            display: block;
+            background-color: #8e4e23;
+            border-radius: 12px;
+            position: relative;
+    
+            transition: 0.4s ease;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+    }
